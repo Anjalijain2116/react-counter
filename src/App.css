@@ -39,17 +39,40 @@
 
 .welcome {
   background-color: rgb(72, 68, 68);
-  color: black;
+  color: white;
   padding-block: 10px;
   text-align: center;
 }
 .btn{
    margin-right: 10px;
    padding: 5px;
+   padding-inline: 10px;
+   background-color: rgb(114, 111, 111);
+   color: white;
+   border: 1px solid rgb(114, 111, 111);
+   border-radius: 4px;
+}
+.description {
+  margin: 20px;
+  font-size: 18px;
+  /* color: #333; */
+  /* text-align: center; */
+}
+.btn1{
+  margin-right: 5px;
+   padding: 5px;
+   background-color: rgb(114, 111, 111);
+   color: white;
+   border: 1px solid rgb(114, 111, 111);
+   border-radius: 4px;
 }
 .btn-container{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+ margin: 20px;
+}
+.container{
+  margin: 20px;
 }
 .CountersPage{
   display: flex;
@@ -57,4 +80,21 @@
   /* align-items: center; */
   padding-inline: 100px;
   
+}
+.li{
+  margin-bottom: 10px;
+}
+.form{
+  display: flex;
+  gap: 5px;
+
+  input{
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(114, 111, 111);
+  }
+    p{
+      margin: 0 !important;
+    
+  }
 }

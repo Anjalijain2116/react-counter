@@ -44,18 +44,18 @@ const Counter: FunctionComponent<CounterProps> = ({
     <div>
       <h2>Counter {index}</h2>
       <p>Local Count: {localCount}</p>
-      <button onClick={incrementLocal} disabled={localCount >= maxCount}>
+      <button className="btn1" onClick={incrementLocal} disabled={localCount >= maxCount}>
         Increment Local
       </button>
-      <button onClick={decrementLocal} disabled={localCount <= minCount}>
+      <button className="btn1"onClick={decrementLocal} disabled={localCount <= minCount}>
         Decrement Local
       </button>
-      <button onClick={resetLocal}>Reset Local</button>
+      <button className="btn1"onClick={resetLocal}>Reset Local</button>
 
       <p>Global Count: {count}</p>
-      <button onClick={() => dispatch(increment())}>Increment Global</button>
-      <button onClick={() => dispatch(decrement())}>Decrement Global</button>
-      <button onClick={() => dispatch(reset())}>Reset Global</button>
+      <button className="btn1" onClick={() => dispatch(increment())}>Increment Global</button>
+      <button className="btn1"onClick={() => dispatch(decrement())}>Decrement Global</button>
+      <button className="btn1"onClick={() => dispatch(reset())}>Reset Global</button>
     </div>
   );
 };
