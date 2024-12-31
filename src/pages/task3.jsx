@@ -11,6 +11,10 @@ const Task3 = () => {
   const [selectedUser, setSelectedUser] = useState(null);
 
   useEffect(() => {
+    dispatch(fetchUsers());
+  }, [dispatch]);
+
+  useEffect(() => {
     if (selectedUser) {
       setValue("name", selectedUser.name);
       setValue("email", selectedUser.email);
